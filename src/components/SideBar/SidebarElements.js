@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
     position: fixed;
     
     left:0;
-    z-index:999;
+    z-index:${({ isOpen }) => (isOpen ? '999' : '-1')};
     width:100%;
     height:100%;
     background:#0d0d0d;
