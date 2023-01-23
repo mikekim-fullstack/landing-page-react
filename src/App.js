@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './components/NavBar';
+import Navbar from './components/LandingView//NavBar';
 import { Routes, Route } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 
-import Home from './pages';
-import SigninPage from './pages/SigninPage';
+import Home from './pages/LandingPage';
+import SigninPage from './pages/LandingPage/SigninPage';
 function App() {
   return (
     <div className="App">
