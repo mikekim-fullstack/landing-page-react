@@ -4,7 +4,8 @@ import { Link as LinkS } from 'react-scroll'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-background:#000;
+background:${({ scrollNav }) => (scrollNav ? 'rgba(0,0,0,0.9)' : 'transparent')};
+box-shadow:${({ scrollNav }) => (scrollNav ? '0px 4px 6px 0px rgba(0,0,0,0.75)' : 'none')};
 height: 80px;
 /* remove top white space when it scrolls screen. */
  margin-top:-80px;
